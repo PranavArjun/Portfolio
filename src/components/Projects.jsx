@@ -6,6 +6,9 @@ import Gunoxi from '../images/Gunoxi .png'
 import Textutils from '../images/TextUtils.png'
 import anonymus_messages from '../images/anonymus-messages.png'
 import authflow from '../images/authflow.png'
+import todolist from '../images/todolist.png'
+import passgenerator from '../images/password-generator.png'
+import currencyconverter from '../images/currency-conveter.png'
 
 function Projects() {
 
@@ -81,10 +84,73 @@ function Projects() {
         },
         {
             id: 4,
+            name: 'Todo-List',
+            scr: todolist,
+            btn1: 'Overview',
+            btn2: 'WebPage',
+            gitlink: 'https://pranavarjun.github.io/Todo-Using-React-JS/',
+            overview: <div className="max-w-md mx-auto p-4">
+                <ol className="list-disc list-outside space-y-2">
+                    <li>Built a To-Do List application using React.js.</li>
+                    <li>Features include adding, deleting, and marking tasks as complete.</li>
+                    <li>Implemented Context API and used local storage to persist tasks across sessions.</li>
+                </ol>
+            </div>
+        },
+        {
+            id: 5,
+            name: 'Text Utils',
+            scr: Textutils,
+            btn1: 'Overview',
+            btn2: 'WebPage',
+            gitlink: 'https://pranavarjun.github.io/TextUtils/',
+            overview: <div className="max-w-md mx-auto p-4">
+                <ol className="list-disc list-outside space-y-2">
+                    <li>Developed a web application to manipulate text easily.</li>
+                    <li>Implemented features to convert text to uppercase/lowercase, count characters, and remove extra spaces.</li>
+                    <li>Used React.js for frontend development.</li>
+                    <li>Applied CSS for styling and JavaScript for interactivity.</li>
+                </ol>
+            </div>
+        },
+        {
+            id: 6,
+            name: 'Currency Converter',
+            scr: currencyconverter,
+            btn1: 'Overview',
+            btn2: 'WebPage',
+            gitlink: 'https://pranavarjun.github.io/Currency-Converter-Using-React-JS/',
+            overview: <div className="max-w-md mx-auto p-4">
+                <ol className="list-disc list-outside space-y-2">
+                    <li>Developed a currency converter application using React.js.</li>
+                    <li>Integrated an API to fetch real-time currency conversion rates.</li>
+                    <li>Allows users to convert currencies to their desired ones with accurate and up-to-date exchange rates.</li>
+                </ol>
+            </div>
+        },
+        {
+            id: 7,
+            name: 'Password Generator',
+            scr: passgenerator,
+            btn1: 'Overview',
+            btn2: 'WebPage',
+            gitlink: 'https://pranavarjun.github.io/Password-Generator-Using-React-JS/',
+            overview: <div className="max-w-md mx-auto p-4">
+                <ol className="list-disc list-outside space-y-2">
+                    <li>Created a password generator using React.js.</li>
+                    <li>Allows users to select the length of the password and toggle inclusion of numbers and special characters.</li>
+                    <li>Users can customize their password with various options for stronger security.</li>
+                </ol>
+            </div>
+        },
+        
+        {
+            id: 8,
             name: 'Exam Corner',
             scr: Examcorner,
             btn1: 'Overview',
             btn2: 'GitHub',
+            gitlink: 'https://github.com/PranavArjun/Exam-Corner-Components',
             overview: <div className="max-w-md mx-auto p-4">
                 <ol className="list-disc list-outside space-y-2">
                     <li>This website is used for downloading University Question Papers of previous years .</li>
@@ -94,7 +160,7 @@ function Projects() {
             </div>
         },
         {
-            id: 5,
+            id: 9,
             name: ' Gunoximeter',
             scr: Gunoxi,
             btn1: 'Overview',
@@ -109,24 +175,9 @@ function Projects() {
                 </ol>
             </div>
         },
+        
         {
-            id: 6,
-            name: 'Text Utils',
-            scr: Textutils,
-            btn1: 'Overview',
-            btn2: 'GitHub',
-            gitlink: 'https://github.com/PranavArjun/TextUtils',
-            overview: <div className="max-w-md mx-auto p-4">
-                <ol className="list-disc list-outside space-y-2">
-                    <li>Developed a web application to manipulate text easily.</li>
-                    <li>Implemented features to convert text to uppercase/lowercase, count characters, and remove extra spaces.</li>
-                    <li>Used React.js for frontend development.</li>
-                    <li>Applied CSS for styling and JavaScript for interactivity.</li>
-                </ol>
-            </div>
-        },
-        {
-            id: 7,
+            id: 10,
             name: 'Food Corner',
             scr: Foodcorner,
             btn1: 'Overview',
@@ -188,7 +239,7 @@ function Projects() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
-                        <h2 className='text-xl font-bold text-gray-800 mb-2'>{selectedProject.name}</h2>
+                        <h2 className='text-xl font-bold text-gray-800 mb-2  text-center'>{selectedProject.name}</h2>
                         <div className='text-sm text-gray-700 overflow-y-auto max-h-60'>{selectedProject.overview}</div>
                     </div>
                 </div>
